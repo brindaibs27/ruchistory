@@ -509,8 +509,7 @@ st.markdown(
 )
 
 st.caption(
-    "Participant listings in Ruchi Story are illustrative and "
-    "are used to demonstrate how interactions on the platform work."
+    "Some participant profiles shown are illustrative."
 )
 
 st.markdown("---")
@@ -803,8 +802,7 @@ with kitchen_tab:
                     )
 
                 st.info(
-                    "These ingredients can now connect to the "
-                    "Grocery side of Ruchi Story."
+                    "Need the missing ingredients? Find grocery options in 🛒 Grocery."
                 )
 
             else:
@@ -1043,25 +1041,13 @@ with grocery_tab:
                 == provider["name"]
             ):
                 st.info(
-                    "In a live version, your ingredient request "
-                    "would now move toward this provider."
+                    "Your missing ingredients are ready to take forward with this provider."
                 )
 
                 st.caption(
                     "No order, payment or real provider request "
                     "has been created."
                 )
-
-    with st.expander(
-        "How does value exchange happen here?"
-    ):
-        st.write(
-            "The user gets a relevant route to complete the meal. "
-            "The grocery provider gets relevant purchase intent. "
-            "A future transaction-linked commission could allow "
-            "Ruchi Story to monetise when successful value exchange "
-            "occurs."
-        )
 
 
 # ============================================================
@@ -1635,9 +1621,7 @@ with cooking_tab:
                 )
 
                 st.info(
-                    "Your cooking experience can now become "
-                    "community value — open 🤝 Community "
-                    "to share your Story."
+                    "Made it? Share your meal and experience with the Ruchi Community."
                 )
 
 
@@ -1960,7 +1944,7 @@ with plus_tab:
         st.info("Coming Soon")
 
     st.caption(
-        "No payment or subscription processing is included."
+        "Ruchi Plus is coming soon."
     )
 
 
@@ -1970,104 +1954,23 @@ with plus_tab:
 
 with future_tab:
 
-    st.header("🌱 Food Donation Drives")
+    st.header("🌱 What's Next for Ruchi Story?")
+
+    st.subheader("Food Donation Drives")
 
     st.write(
-        "Ruchi begins by helping people make better use of "
-        "food they already have. Ruchi Story can eventually "
-        "extend that principle to usable surplus food."
+        "Have usable food left over? A future Ruchi Story feature "
+        "will help users discover verified food-donation initiatives "
+        "and find responsible ways to redirect surplus food instead "
+        "of wasting it."
     )
 
     st.info("Coming Soon")
 
-    st.markdown("""
-### Future journey
-
-**Usable surplus food**
-
-↓
-
-**Verified donation initiatives**
-
-↓
-
-**Safe redistribution**
-
-A real implementation would require participant verification,
-food-safety rules, perishability controls, logistics,
-accountability and clear responsibility for fulfilment.
-""")
-
-    st.markdown("---")
-
-    st.header("How Ruchi Became Ruchi Story")
-
-    st.markdown("""
-### Ruchi
-
-**User → Kitchen Intelligence → Meal Decision → Cooking → Learning**
-
-Ruchi creates value **for the individual user**.
-
-### Ruchi Story
-
-**User ↔ Grocery Providers ↔ Creators ↔ Nutritionists ↔ Community**
-
-Ruchi Story enables different participants to create value
-**for each other**.
-
-The original Ruchi intelligence layer remains at the centre.
-The platform extends the moments in the food journey where
-another participant can add value.
-""")
-
-    st.markdown("---")
-
-    st.header("Platform Design")
-
-    with st.expander(
-        "1. Design for Thickness",
-        expanded=True
-    ):
-        st.write(
-            "Ruchi Story brings multiple relevant participants "
-            "around the user's food journey — providers, creators, "
-            "nutrition professionals and other users."
-        )
-
-    with st.expander("2. Avoid Congestion"):
-        st.write(
-            "Filtering, matching and sorting help users reach "
-            "relevant participants instead of browsing an "
-            "unstructured marketplace."
-        )
-
-    with st.expander(
-        "3. Mitigate Asymmetric Information"
-    ):
-        st.write(
-            "Participant profiles expose information such as "
-            "speciality, ratings, verification indicators and "
-            "fulfilment information."
-        )
-
-    with st.expander(
-        "4. Ensure Participants' Safety"
-    ):
-        st.write(
-            "Reporting, community guidelines, professional "
-            "disclaimers and verification mechanisms form the "
-            "starting governance layer."
-        )
-
-    with st.expander(
-        "5. Align Monetisation with Platform Goals"
-    ):
-        st.write(
-            "Future monetisation can be connected to successful "
-            "value exchange, such as completed marketplace "
-            "transactions, rather than unrelated advertising."
-        )
+    st.write(
+        "**Planned for the future:** verified donation partners, "
+        "surplus-food matching and safer hand-off coordination."
+    )
 
 
 # ============================================================
